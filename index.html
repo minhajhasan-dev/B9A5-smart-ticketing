@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="container mx-auto">
+      <!-- navbar section -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost font-bold text-2xl">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="btn border-[1px solid #1dd10066] btn-outline text-green-500 bg-[#1dd10010] text-lg hover:bg-[#1dd10020] hover:text-green-600"
+            >Bus <img src="./images/bus-icon.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- banner section  -->
+      <div class="banner mt-9">
+        <div
+          class="hero h-96 lg:h-[550px] rounded-3xl bg-center bg-cover bg-no-repeat overflow-hidden"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-xl">
+              <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with</h1>
+              <h1 class="mb-5 text-5xl text-[#1DD100] font-bold">
+                P Paribahan
+              </h1>
+              <p class="mb-5">
+                We provide the best bus service for you. We have the best bus
+                for you to travel. we are popular all over the country.
+              </p>
+              <button
+                class="btn hover:bg-[#1ab80f] border-none text-black btn-primary font-bold bg-[#1DD100]"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- best offer section  -->
+      <div class="mt-28">
+        <h1 class="text-4xl text-center font-bold">Best offers for you</h1>
+        <!-- offers div -->
+        <div class="flex gap-6 my-12 justify-center">
+          <div
+            class="w-[573px] h-[220px] bg-[#FFBF0F] rounded-2xl flex gap-24 justify-center items-center"
+          >
+            <div>
+              <h1 class="text-4xl font-bold">15% OFF</h1>
+              <p class="font-bold">on your next purchase</p>
+              <p class="text-lg text-[#03071298]">use by January 2024</p>
+            </div>
+            <div>
+              <h1 class="text-4xl font-bold">NEW15</h1>
+              <p class="text-xl text-[#03071298]">Coupon Code</p>
+            </div>
+          </div>
+          <div
+            class="w-[573px] h-[220px] bg-[#F78C9C] rounded-2xl flex gap-24 justify-center items-center"
+          >
+            <div>
+              <h1 class="text-4xl font-bold">20% OFF</h1>
+              <p class="font-bold">on your next purchase</p>
+              <p class="text-lg text-[#03071298]">use by January 2024</p>
+            </div>
+            <div>
+              <h1 class="text-4xl font-bold">Couple 20</h1>
+              <p class="text-xl text-center text-[#03071298]">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
