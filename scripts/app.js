@@ -44,3 +44,27 @@ for (const seat of seats) {
     seatSelectedInfo.innerText = seatSelected;
   });
 }
+
+const couponInput = document.getElementById("couponInput");
+const couponButton = document.getElementById("applyCoupon");
+couponButton.addEventListener("click", function () {
+  const couponValue = couponInput.value;
+  const totalPrice = document.getElementById("total-price");
+  const totalPriceNumber = parseInt(totalPrice.innerText);
+  if (couponValue === "NEW15") {
+    const discountPrice = totalPriceNumber - totalPriceNumber * 0.15;
+    totalPrice.innerText = discountPrice;
+    couponInput.value = "";
+    couponInput.style.display = "none";
+    couponButton.style.display = "none";
+  } else if (couponValue === "Couple 20") {
+    const discountPrice = totalPriceNumber - totalPriceNumber * 0.2;
+    totalPrice.innerText = discountPrice;
+    couponInput.value = "";
+    couponInput.style.display = "none";
+    couponButton.style.display = "none";
+  } else {
+    alert("Invalid coupon code");
+  }
+});
+
